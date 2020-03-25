@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    }
+
+.header-bar {
+    height: 25px;
+    width: 100%;
+    font-size: 95%;
+    background-color: aqua;
+
+}
+
+.header-image {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%
+}
