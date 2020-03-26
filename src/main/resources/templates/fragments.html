@@ -7,15 +7,37 @@
 </head>
 <body>
 
-
+<!--TODO
+The image will not be static. The correct image will be selected for each page.
+Perhaps some formatting safeguards need to be in place so the image does not end up wonky.
+-->
 <img th:fragment="header-image" class="header-image" th:src="@{/img/frontPage.jpg}" />
 
 
+<!-- TODO
+This will be a set of links pulled from a list. They will be vertically centered and evenly spaced
+from each other. They will each be in their own div. First, I need to create all the pages they
+will link to.
+Also, tweak the color and font style. Get Savannah's opinion.
+-->
 <div th:fragment="header-bar" class="header-bar">
 
     *Navigation* *Social Media* *About* *Contact* *Credits* *Status* *Search* *Sign in*
 
 </div>
+
+<div th:fragment="content-wrapper" class="content-wrapper">
+    <div class="content-left">
+    </div>
+    <div class="content-right">
+    </div>
+</div>
+
+<div th:fragment="bottom-bar" class="bottom-bar">
+    copyright info
+</div>
+
+<div th:fragment="bottom-spacer" class="bottom-spacer"></div>
 
 </body>
 </html>
