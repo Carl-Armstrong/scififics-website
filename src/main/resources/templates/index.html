@@ -8,11 +8,13 @@
 
     <div th:replace="fragments :: header-bar"></div>
 
-    <div th:replace="fragments :: content-wrapper"></div>
+    <div class="wrapper">
+        <div th:replace="fragments :: main-content"></div>
+        <div th:replace="fragments :: right-sidebar"></div>
+    </div>
 
     <div th:replace="fragments :: bottom-bar"></div>
 
-    <div th:replace="fragments :: bottom-spacer"></div>
 
 </body>
 </html>

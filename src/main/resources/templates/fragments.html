@@ -20,24 +20,27 @@ from each other. They will each be in their own div. First, I need to create all
 will link to.
 Also, tweak the color and font style. Get Savannah's opinion.
 -->
-<div th:fragment="header-bar" class="header-bar">
+<ul th:fragment="header-bar" class="header-bar">
+    <li><a href="#">Home</a> </li>
+    <li><a href="#">Navigation</a> </li>
+    <li><a href="#">Social Media</a> </li>
+    <li><a href="#">About</a> </li>
+    <li><a href="#">Contact</a> </li>
+    <li><a href="#">Credits</a> </li>
+    <li><a href="#">Status</a> </li>
+    <li><a href="#">Search</a> </li>
+    <li><a href="#">Sign in</a> </li>
+</ul>
 
-    *Navigation* *Social Media* *About* *Contact* *Credits* *Status* *Search* *Sign in*
-
-</div>
-
-<div th:fragment="content-wrapper" class="content-wrapper">
-    <div class="content-left">
+<div th:fragment="main-content" class="main-content">
     </div>
-    <div class="content-right">
+
+<div th:fragment="right-sidebar" class="right-sidebar">
     </div>
-</div>
 
 <div th:fragment="bottom-bar" class="bottom-bar">
     copyright info
 </div>
-
-<div th:fragment="bottom-spacer" class="bottom-spacer"></div>
 
 </body>
 </html>
